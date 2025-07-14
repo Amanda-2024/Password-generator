@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mode">
+        <p>Choose mode</p>
+        <label for ="light">
+            Light mode
+            <input type = "radio" id = "light" name = "light" checked>
+        </label>
+        <label for ="dark">
+            Dark mode
+            <input type = "radio" id = "dark" name = "dark">
+        </label>
+    </div>
+    <div class = "password">
+        <p>Generated password : </p>
+        <input type = "text" id = "generated_password" disabled>
+    <div class = "range">
+        <p>
+            Password length : 
+            <input type ="range" value="8" min="4" max="20" id="length"> 
+            <span id ="pw_value">
+            8 <!-- &nbsp is used to preserve the space, FF : non-breaking space-->
+            </span> 
+            <br>
+            <span id = "adjust">(adjust the slider to change password length)</span>
+        </p>
+    </div>
+    <div class = "checkboxes">
+        <p>Choose characters to include : </p>
+    <div class = "number">
+        Include numbers
+        <label for = "numbers">
+            <input type = checkbox id = "numbers" name = "numbers" checked>
+        </label>
+    </div>
+    <div class = "caps">
+        Include capital letters
+        <label for = "capital">
+            <input type = checkbox id = "capital" name = "capital" checked>
+        </label>
+    </div>
+    <div class = "small_let">
+        Include small letters
+        <label for = "small">
+            <input type = "checkbox" id = "small" name = "small" checked>
+        </label>
+    </div>
+    <div char = "char">
+        Include special characters
+        <label for = "special">
+            <input type = "checkbox" id = "special" name = "special" checked>
+        </label>
+    </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
