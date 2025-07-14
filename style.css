@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: rgb(245, 245, 245);
     text-align: center;
+    align-items: center ;
     font-family: Arial, sans-serif;
 }
 
